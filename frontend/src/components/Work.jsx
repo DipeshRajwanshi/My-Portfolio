@@ -8,6 +8,7 @@ import Thum3 from "../assets/thum3.jpg"
 import Product from "../assets/product.png"
 import headphone from "../assets/headphone.png"
 import Camera from "../assets/camera.png"
+import reel from "../assets/style.jpeg"
 
 const Work = () => {
   const [reels, setReels] = useState([]);
@@ -16,9 +17,9 @@ const Work = () => {
 
   useEffect(() => {
     const demoReels = [
-      { _id: 1, title: "Cinematic Travel Reel", description: "Vertical reel with smooth transitions.", thumbnail: short1, link: "https://youtube.com/shorts/v51EEnb-VXM" },
-      { _id: 2, title: "Before After Edit", description: "Before After Edit", thumbnail: Sthum1, link: "https://youtube.com/shorts/Ea4fLXdP0n8?si=bWrBd0cx4gBD2bwQ" },
-      { _id: 3, title: "Music Sync Reel", description: "Fast-paced cuts synced with beats.", thumbnail: Sthum1, link: "https://youtube.com/shorts/N1L_G2xpHKg" }
+      { _id: 1, title: "Cinematic Travel Reel", description: "Vertical reel with smooth transitions.", thumbnail: Sthum1, link: "youtube.com/shorts/Ea4fLXdP0n8?si=bWrBd0cx4gBD2bwQ" },
+      { _id: 2, title: "Before After Edit", description: "Before After Edit", thumbnail: reel, link: "https://www.instagram.com/reel/DRGfn17CGEU/?igsh=MW1ldGR3bW53bmhpeQ==" },
+      { _id: 3, title: "Music Sync Reel", description: "Fast-paced cuts synced with beats.", thumbnail: short1, link: "https://youtube.com/shorts/v51EEnb-VXM" } //https://www.instagram.com/reel/DRGfn17CGEU/?igsh=MW1ldGR3bW53bmhpeQ==
     ];
 
     const fullYT = [
