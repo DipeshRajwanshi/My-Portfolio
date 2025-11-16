@@ -22,3 +22,28 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Generated build folders
+build/
+out/
+
+# Environment files
+.env
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+
+# Design files
+*.psd
+*.ai
+*.fig
+*.xd
+
+# Zipped files
+*.zip
+*.rar
+*.7z
