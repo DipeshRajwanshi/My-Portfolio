@@ -11,9 +11,9 @@ const LandingPage = () => {
 
       {/* Navbar */}
       <nav className="relative z-10 flex justify-between items-center px-12 py-6">
-        <h1 className="text-xl font-semibold tracking-widest uppercase">
+        {/* <h1 className="text-xl font-semibold tracking-widest uppercase">
           Dipesh Rajwanshi
-        </h1>
+        </h1> */}
 
         <div className="space-x-10 text-sm flex items-center">
           <Link
