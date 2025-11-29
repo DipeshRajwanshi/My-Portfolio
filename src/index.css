@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* body {
+  @apply bg-black text-white font-sans;
+} */
+
+html, body, #root {
+  height: 100%;
+}
