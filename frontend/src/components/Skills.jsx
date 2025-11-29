@@ -11,6 +11,7 @@ import {
   SiAdobephotoshop,
   SiCanva,
   SiCoreldraw,
+  SiAdobeaftereffects
 } from "react-icons/si";
 
 
@@ -22,6 +23,7 @@ const skills = [
   { name: "Photoshop", icon: <SiAdobephotoshop className="text-teal-400 text-3xl" /> },
   { name: "Canva", icon: <SiCanva className="text-teal-400 text-3xl" /> },
   { name: "CorelDRAW", icon: <SiCoreldraw className="text-teal-400 text-3xl" /> },
+  { name: "After Effects", icon: <SiAdobeaftereffects className="text-teal-400 text-3xl" /> },
 ];
 
 const Skills = () => {

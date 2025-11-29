@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import short1 from "../assets/short1.png"
-import Sthum1 from "../assets/Sthum1.jpg"
+import thumb3 from "../assets/Thumbnails/thumb3.PNG"
 import Thum1 from "../assets/thum1.jpg"
 import Thum2 from "../assets/thum2.jpg"
 import Thum3 from "../assets/thum3.jpg"
 import Product from "../assets/product.png"
 import headphone from "../assets/headphone.png"
 import Camera from "../assets/camera.png"
-import reel from "../assets/style.jpeg"
+import reel from "../assets/Thumbnails/thumbb11.PNG"
+import thumb2 from "../assets/Thumbnails/thumbb1.PNG"
+import thumb4 from "../assets/Thumbnails/thumb4.PNG"
+import thumb5 from "../assets/Thumbnails/thumb5.PNG"
+import thumb6 from "../assets/Thumbnails/thumb6.PNG"
 
 const Work = () => {
   const [reels, setReels] = useState([]);
@@ -17,9 +20,12 @@ const Work = () => {
 
   useEffect(() => {
     const demoReels = [
-      { _id: 1, title: "Cinematic Travel Reel", description: "Vertical reel with smooth transitions.", thumbnail: Sthum1, link: "youtube.com/shorts/Ea4fLXdP0n8?si=bWrBd0cx4gBD2bwQ" },
-      { _id: 2, title: "Before After Edit", description: "Before After Edit", thumbnail: reel, link: "https://www.instagram.com/reel/DRGfn17CGEU/?igsh=MW1ldGR3bW53bmhpeQ==" },
-      { _id: 3, title: "Music Sync Reel", description: "Fast-paced cuts synced with beats.", thumbnail: short1, link: "https://youtube.com/shorts/v51EEnb-VXM" } //https://www.instagram.com/reel/DRGfn17CGEU/?igsh=MW1ldGR3bW53bmhpeQ==
+      { _id: 1, title: "Documentary Edit", description: "Professional documentary Edit", thumbnail: reel , link: "https://drive.google.com/file/d/14g_G0VuN28wzd2-cpiXnqdCpgGYGtuyP/view?usp=drive_link" },
+      { _id: 2, title: "Tranding Edit", description: "Tranding Edit", thumbnail: thumb2, link: "https://drive.google.com/file/d/10SeTSYwja_ubhgFyh4TKQUmqZHbwhIdj/view?usp=drive_link" },
+      { _id: 3, title: "Podcast Edit", description: "Converting Row Footage into Professional.", thumbnail: thumb3, link: "https://drive.google.com/file/d/1bGGTaKOKQaVkrtEl__GW-yO-1VdAJgTA/view?usp=drive_link" }, //https://www.instagram.com/reel/DRGfn17CGEU/?igsh=MW1ldGR3bW53bmhpeQ==
+      { _id: 10, title: "Podcast Edit", description: "Podcast Edit", thumbnail: thumb4, link: "https://drive.google.com/file/d/1wY8hrrC9_sih9CZLVtnSClx0jOsNcV5D/view?usp=drive_link" },
+      { _id: 11, title: "Representational Edit", description: "Representational Edit", thumbnail: thumb5, link: "https://drive.google.com/file/d/12ZaaQyw8V6HQhphoRTzHA-8lTFeGvuRd/view?usp=drive_link" },
+      { _id: 12, title: "Story Telling Edit", description: "Documentary Edit", thumbnail: thumb6, link: "https://drive.google.com/file/d/1QrDv428hpsEK6EInUKMF_pCnLe5kHXTZ/view?usp=drive_link1" }
     ];
 
     const fullYT = [
@@ -135,15 +141,17 @@ const Work = () => {
           <a key={g._id} href={g.link} target="_blank" className="group">
             <motion.div
               whileHover={{ scale: 1.06 }}
-              className={`${glowCard} w-[260px] overflow-hidden cursor-pointer`}
+              className={`${glowCard} w-[340px] overflow-hidden cursor-pointer`} // wider like YouTube thumbnail
             >
-              <div className="relative w-full pb-[100%] overflow-hidden">
+              {/* 16:9 YouTube thumbnail ratio */}
+              <div className="relative w-full pb-[56.25%] overflow-hidden">
                 <img
                   src={g.imageUrl}
                   className="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
                   alt={g.title}
                 />
               </div>
+
               <div className="p-4 text-center">
                 <h3 className="text-lg font-semibold text-pink-300 group-hover:text-pink-200 transition">
                   {g.title}
@@ -153,6 +161,7 @@ const Work = () => {
           </a>
         ))}
       </div>
+
     </section>
   );
 };
