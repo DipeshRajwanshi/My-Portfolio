@@ -44,9 +44,9 @@ const Work = () => {
     ];
 
     const graphicWorks = [
-      { _id: 7, title: "Product Poster Design", imageUrl: Product, link: "/thumnail1.png" },
-      { _id: 8, title: "Poster Design For Headphone", imageUrl: headphone, link: "/thumnail2.png" },
-      { _id: 9, title: "Poster Disign for Camera", imageUrl: Camera, link: "/thumnail3.png" }
+      { _id: 7, title: "Youtube Thumbnail Design", imageUrl: thumbnail1, link: thumbnail3 },
+      { _id: 8, title: "Youtube Thumbnail Design", imageUrl: thumbnail2, link: thumbnail2 },
+      { _id: 9, title: "Youtube Thumbnail Design", imageUrl: thumbnail3, link: thumbnail3 }
     ];
 
     setReels(demoReels);
