@@ -15,6 +15,9 @@ import thumb6 from "../assets/Thumbnails/thumb6.PNG"
 import new22 from "../assets/new22.PNG"
 import new33 from "../assets/new33.PNG"
 import new44 from "../assets/new44.PNG"
+import thumbnail1 from "../assets/thumnail1.jpg"
+import thumbnail2 from "../assets/thumnail2.jpg"
+import thumbnail3 from "../assets/thumnail3.jpg"
 
 const Work = () => {
   const [reels, setReels] = useState([]);
@@ -41,9 +44,9 @@ const Work = () => {
     ];
 
     const graphicWorks = [
-      { _id: 7, title: "Product Poster Design", imageUrl: Product, link: "/product.png" },
-      { _id: 8, title: "Poster Design For Headphone", imageUrl: headphone, link: "/headphone.png" },
-      { _id: 9, title: "Poster Disign for Camera", imageUrl: Camera, link: "/camera.png" }
+      { _id: 7, title: "Product Poster Design", imageUrl: Product, link: "/thumnail1.png" },
+      { _id: 8, title: "Poster Design For Headphone", imageUrl: headphone, link: "/thumnail2.png" },
+      { _id: 9, title: "Poster Disign for Camera", imageUrl: Camera, link: "/thumnail3.png" }
     ];
 
     setReels(demoReels);
